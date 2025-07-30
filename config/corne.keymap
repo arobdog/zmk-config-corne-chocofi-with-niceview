@@ -106,7 +106,7 @@
 
             bindings = <
 &trans  &kp Q              &kp W             &kp F                    &kp P                  &kp B          &kp J      &kp L              &kp U             &kp Y              &hm APOSTROPHE SEMICOLON  &trans
-&trans  &weak LEFT_META A  &weak LEFT_ALT R  &shifthr LEFT_CONTROL S  &shifthr LEFT_SHIFT T  &kp G          &kp M      &shifthr RSHIFT N  &shifthr RCTRL E  &weak RIGHT_ALT I  &kp O                     &trans
+&trans  &weak LEFT_META A  &weak LEFT_ALT R  &shifthr LEFT_CONTROL S  &shifthr LEFT_SHIFT T  &kp G          &kp M      &shifthr RSHIFT N  &shifthr RCTRL E  &weak RIGHT_ALT I  &weak RIGHT_META O        &trans
 &trans  &kp Z              &kp X             &kp C                    &kp D                  &kp V          &kp K      &kp H              &kp COMMA         &kp DOT            &kp SLASH                 &trans
                                              &save                    &lt 1 TAB              &lt 2 SPACE    &lt 2 RET  &lt 1 BACKSPACE    &kp ESCAPE
             >;
