@@ -89,7 +89,7 @@
         email: email {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none &kp J &kp O &kp S &kp H &kp AT &kp J &kp O &kp S &kp H &kp B &kp L &kp A &kp I &kp S &kp DOT &kp C &kp O &kp M>;
+            bindings = <&none &kp A &kp DOT &kp R &kp O &kp B &kp S &kp N1 &kp N0 &kp N0 &kp AT &kp G &kp M &kp A &kp I &kp L &kp DOT &kp C &kp O &kp M>;
             label = "EMAIL";
         };
     };
@@ -105,10 +105,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&none  &kp Q              &kp W             &kp F                    &kp P                  &kp B        &kp J      &kp L              &kp U             &kp Y              &kp APOS             &none
-&none  &weak LEFT_META A  &weak LEFT_ALT R  &shifthr LEFT_CONTROL S  &shifthr LEFT_SHIFT T  &kp G        &kp M      &shifthr RSHIFT N  &shifthr RCTRL E  &weak RIGHT_ALT I  &kp O                &none
-&none  &kp Z              &kp X             &kp C                    &kp D                  &kp V        &kp K      &kp H              &kp COMMA         &kp DOT            &hm SEMICOLON SLASH  &none
-                                            &none                    &lt 1 BACKSPACE        &lt 2 TAB    &lt 2 RET  &lt 1 SPACE        &save
+&trans  &kp Q              &kp W             &kp F                    &kp P                  &kp B          &kp J      &kp L              &kp U             &kp Y              &hm APOSTROPHE SEMICOLON  &trans
+&trans  &weak LEFT_META A  &weak LEFT_ALT R  &shifthr LEFT_CONTROL S  &shifthr LEFT_SHIFT T  &kp G          &kp M      &shifthr RSHIFT N  &shifthr RCTRL E  &weak RIGHT_ALT I  &kp O                     &trans
+&trans  &kp Z              &kp X             &kp C                    &kp D                  &kp V          &kp K      &kp H              &kp COMMA         &kp DOT            &kp SLASH                 &trans
+                                             &save                    &lt 1 TAB              &lt 2 SPACE    &lt 2 RET  &lt 1 BACKSPACE    &kp ESCAPE
             >;
 
             label = "home";
@@ -122,10 +122,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&none  &kp EXCL            &kp AT               &kp LEFT_BRACE              &kp RIGHT_BRACE                   &kp PIPE     &kp PLUS   &kp NUMBER_7  &kp N8        &kp N9                    &kp ASTERISK   &none
-&none  &hm LEFT_META HASH  &hm LEFT_ALT DOLLAR  &hm LCTRL LEFT_PARENTHESIS  &hm LEFT_SHIFT RIGHT_PARENTHESIS  &kp GRAVE    &kp MINUS  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6              &kp COLON      &none
-&none  &kp PERCENT         &kp CARET            &kp LEFT_BRACKET            &kp RIGHT_BRACKET                 &kp TILDE    &kp EQUAL  &kp NUMBER_1  &kp NUMBER_2  &shifthr PERIOD NUMBER_3  &kp BACKSLASH  &none
-                                                &none                       &kp LC(BACKSPACE)                 &kp DEL      &kp RET    &kp SPACE     &kp N0
+&trans  &kp EXCL            &kp AT               &kp LEFT_BRACE              &kp RIGHT_BRACE                   &kp PIPE     &kp PLUS   &kp NUMBER_7  &kp N8        &kp N9                    &kp ASTERISK   &trans
+&trans  &hm LEFT_META HASH  &hm LEFT_ALT DOLLAR  &hm LCTRL LEFT_PARENTHESIS  &hm LEFT_SHIFT RIGHT_PARENTHESIS  &kp GRAVE    &kp MINUS  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6              &kp COLON      &trans
+&trans  &kp PERCENT         &kp CARET            &kp LEFT_BRACKET            &kp RIGHT_BRACKET                 &kp TILDE    &kp EQUAL  &kp NUMBER_1  &kp NUMBER_2  &shifthr PERIOD NUMBER_3  &kp BACKSLASH  &trans
+                                                 &none                       &kp LC(BACKSPACE)                 &kp SPACE    &kp RET    &kp DELETE    &kp N0
             >;
 
             label = "num";
@@ -133,10 +133,10 @@
 
         nav {
             bindings = <
-&trans  &kp F1            &kp F2           &kp F3        &kp F4             &email             &kp LS(K_PREVIOUS)  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp LS(K_NEXT)  &kp K_PLAY_PAUSE  &trans
-&trans  &hm LEFT_META F5  &hm LEFT_ALT F6  &hm LCTRL F7  &hm LEFT_SHIFT F8  &hm LC(V) LC(C)    &kp LEFT_ARROW      &kp DOWN           &kp UP_ARROW     &kp RIGHT       &none             &trans
-&trans  &kp F9            &kp F10          &kp F11       &kp F12            &kp PSCRN          &kp LA(H)           &kp LA(TAB)        &none            &kp LA(L)       &none             &trans
-                                           &bt BT_CLR    &bt BT_NXT         &trans             &trans              &trans             &trans
+&trans  &kp F1            &kp F2           &kp F3        &kp F4             &email             &none             &kp LS(K_PREVIOUS)  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp LS(K_NEXT)  &trans
+&trans  &hm LEFT_META F5  &hm LEFT_ALT F6  &hm LCTRL F7  &hm LEFT_SHIFT F8  &hm LC(V) LC(C)    &kp K_PLAY_PAUSE  &kp LEFT            &kp DOWN           &kp UP           &kp RIGHT       &trans
+&trans  &kp F9            &kp F10          &kp F11       &kp F12            &kp PSCRN          &none             &kp LA(H)           &kp LA(TAB)        &none            &kp LA(L)       &trans
+                                           &bt BT_CLR    &bt BT_NXT         &trans             &trans            &trans              &trans
             >;
 
             label = "nav";
