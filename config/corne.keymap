@@ -136,10 +136,21 @@
 &trans  &kp F1            &kp F2           &kp F3        &kp F4             &email             &none             &kp LS(K_PREVIOUS)  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp LS(K_NEXT)  &trans
 &trans  &hm LEFT_META F5  &hm LEFT_ALT F6  &hm LCTRL F7  &hm LEFT_SHIFT F8  &hm LC(V) LC(C)    &kp K_PLAY_PAUSE  &kp LEFT            &kp DOWN           &kp UP           &kp RIGHT       &trans
 &trans  &kp F9            &kp F10          &kp F11       &kp F12            &kp PSCRN          &none             &kp LA(H)           &kp LA(TAB)        &none            &kp LA(L)       &trans
-                                           &bt BT_CLR    &bt BT_NXT         &trans             &trans            &trans              &trans
+                                           &bt BT_CLR    &bt BT_NXT         &to 3              &to 3             &trans              &trans
             >;
 
             label = "nav";
+        };
+
+        qwerty {
+            bindings = <
+&trans  &kp Q  &kp W  &kp E  &kp R      &kp T          &kp Y         &kp U            &kp I      &kp O    &kp P     &trans
+&trans  &kp A  &kp S  &kp D  &kp F      &kp G          &kp H         &kp J            &kp K      &kp L    &kp SEMI  &trans
+&trans  &kp Z  &kp X  &kp C  &kp V      &kp B          &kp N         &kp M            &kp COMMA  &kp DOT  &kp FSLH  &trans
+                      &to 0  &lt 1 TAB  &lt 2 SPACE    &lt 2 RETURN  &lt 1 BACKSPACE  &kp ESC
+            >;
+
+            label = "qwerty";
         };
     };
 };
