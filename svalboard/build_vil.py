@@ -48,7 +48,7 @@ layers = {
         "R2": dict(c="RCTL_T(KC_E)", n="KC_U", s="KC_COMMA", inner="KC_J", outer="KC_SCOLON"),
         "R3": dict(c="RALT_T(KC_I)", n="KC_Y", s="KC_DOT", inner="KC_K", outer=f"MO({BOARD})"),
         "R4": dict(c="RGUI_T(KC_O)", n="KC_QUOTE", s="KC_SLASH"),
-        "LT": dict(down=f"LT({NUM},KC_TAB)", pad=f"LT({NAV},KC_SPACE)", nail="KC_LSHIFT",
+        "LT": dict(down=f"LT({NUM},KC_TAB)", pad=f"LT({NAV},KC_SPACE)", nail="QK_CAPS_WORD_TOGGLE",
                    knuckle="M0", up=f"TO({BASE})"),
         "RT": dict(down=f"LT({NUM},KC_BSPACE)", pad=f"LT({NAV},KC_ENTER)",
                    knuckle="KC_ESCAPE", up="QK_REPEAT_KEY"),
@@ -62,7 +62,7 @@ layers = {
         "R2": dict(n="KC_8", c="KC_5", s="KC_2", inner="KC_PLUS"),
         "R3": dict(n="KC_9", c="KC_6", s="KC_3", outer="KC_DOT", inner="KC_EQUAL"),
         "R4": dict(n="KC_ASTR", c="KC_COLN", s="KC_BSLASH"),
-        "LT": dict(down="LCTL(KC_BSPACE)", pad="KC_SPACE", nail=TRNS, up=TRNS, dd="KC_LGUI"),
+        "LT": dict(down="LCTL(KC_BSPACE)", pad="KC_SPACE", up=TRNS, dd="KC_LGUI"),
         "RT": dict(down="KC_DELETE", pad="KC_ENTER", nail="KC_0", knuckle=TRNS),
     }),
     NAV: (NO, {
@@ -74,7 +74,7 @@ layers = {
         "R2": dict(n="KC_VOLD", c="KC_DOWN", s="LALT(KC_TAB)"),
         "R3": dict(n="KC_VOLU", c="KC_UP"),
         "R4": dict(n="LSFT(KC_MNXT)", c="KC_RIGHT", s="LALT(KC_L)"),
-        "LT": dict(pad=f"TO({QWERTY})", nail=TRNS, up=TRNS),
+        "LT": dict(pad=f"TO({QWERTY})", up=TRNS),
         "RT": dict(down=TRNS, pad=f"TO({QWERTY})", knuckle=TRNS),
     }),
     QWERTY: (TRNS, {
@@ -159,7 +159,7 @@ settings = {
     "retro_tapping": 0,
     "quick_tap_term": 150,
     "chordal_hold": 0,
-    "flow_tap_term": 125,
+    "flow_tap_term": 0,
 }
 
 vil = {

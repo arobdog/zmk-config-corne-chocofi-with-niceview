@@ -5,7 +5,7 @@
   [
    [
     "M0",
-    "KC_LSHIFT",
+    "QK_CAPS_WORD_TOGGLE",
     "LT(1,KC_TAB)",
     "LT(2,KC_SPACE)",
     "TO(0)",
@@ -87,7 +87,7 @@
   [
    [
     "KC_NO",
-    "KC_TRNS",
+    "KC_NO",
     "LCTL(KC_BSPACE)",
     "KC_SPACE",
     "KC_TRNS",
@@ -169,7 +169,7 @@
   [
    [
     "KC_NO",
-    "KC_TRNS",
+    "KC_NO",
     "KC_NO",
     "TO(3)",
     "KC_TRNS",
@@ -1407,6 +1407,6 @@
   "24": 0,
   "25": 150,
   "26": 0,
-  "27": 125
+  "27": 0
  }
 }
