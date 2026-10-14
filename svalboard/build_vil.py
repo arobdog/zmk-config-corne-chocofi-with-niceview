@@ -96,7 +96,7 @@ layers = {
     }),
     # Clicks live on thumb keys a word never starts with, so typing straight after pointing isn't eaten.
     MOUSE: (TRNS, {
-        "LT": dict(knuckle="SV_SNIPER_3"),
+        "LT": dict(knuckle="SV_SNIPER_3", up="SV_SNIPER_5"),
         "RT": dict(up="KC_BTN1", knuckle="KC_BTN2"),
     }),
 }
