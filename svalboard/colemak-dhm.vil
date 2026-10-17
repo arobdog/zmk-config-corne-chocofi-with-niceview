@@ -45,8 +45,8 @@
    ],
    [
     "KC_ESCAPE",
-    "KC_NO",
-    "LT(1,KC_BSPACE)",
+    "KC_BSPACE",
+    "MO(1)",
     "LT(2,KC_ENTER)",
     "QK_REPEAT_KEY",
     "KC_NO"
@@ -127,8 +127,8 @@
    ],
    [
     "KC_TRNS",
-    "KC_0",
     "KC_DELETE",
+    "KC_0",
     "KC_ENTER",
     "KC_NO",
     "KC_NO"
@@ -209,7 +209,7 @@
    ],
    [
     "KC_TRNS",
-    "KC_NO",
+    "KC_TRNS",
     "KC_TRNS",
     "TO(3)",
     "KC_NO",
